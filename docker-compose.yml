@@ -1,0 +1,13 @@
+services:
+  amneziawg-client:
+    image: amneziawg-client-local
+    container_name: amneziawg-client
+    restart: always
+    network_mode: host
+    stdin_open: true
+    tty: true
+    privileged: true
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    volumes:
+      - ../config:/config

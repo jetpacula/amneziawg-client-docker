@@ -46,6 +46,21 @@ Run an AmneziaWG peer in a Docker container. Allows routing of specific Docker n
     ghcr.io/zeozeozeo/amneziawg-client
    ```
 
+   OR via bash script
+
+   ```
+   sh start.sh
+   
+   ```
+
+   OR via docker compose
+
+
+   ```
+   docker compose up -d
+   ```
+
+
 ### Supported platforms
 
 The only tested architectures (and the only ones built by CI) are `linux/amd64` and `linux/arm64`. If you require any others, please do not hesitate to open an issue/PR!
